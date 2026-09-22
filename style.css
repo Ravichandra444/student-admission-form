@@ -1,1 +1,185 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+form {
+    padding: 35px;
+}
+
+h2 {
+    color: #2563eb;
+    font-size: 21px;
+    margin: 10px 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="file"] {
+    background: #f9fafb;
+}
+
+.declaration {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px 0 25px;
+}
+
+.declaration input {
+    width: auto;
+    margin-top: 3px;
+}
+
+.declaration label {
+    font-weight: normal;
+    margin: 0;
+    color: #4b5563;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+button {
+    border: none;
+    padding: 13px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+button[type="reset"]:hover {
+    background: #d1d5db;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8fafc;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+```
